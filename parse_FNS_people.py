@@ -28,7 +28,6 @@ for file in files:
     
     tree = ET.parse(file)
     root = tree.getroot()
-    print (len(root))
     item=dict.fromkeys(['Company', 'INN', 'People'])
     for i in range (1,len(root)):
         for child in root[i]:
