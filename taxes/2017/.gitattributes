@@ -1,0 +1,4 @@
+data-20190426-structure-20180110.zip filter=lfs diff=lfs merge=lfs -text
+*.zip@
+
+git[[:space:]]lfs[[:space:]]track[[:space:]]*.zip filter=lfs diff=lfs merge=lfs -text
