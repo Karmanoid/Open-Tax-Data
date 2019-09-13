@@ -21,5 +21,10 @@ Open tax data repository for researchers and journalists
 
 ### Notebook с примерами для анализа данных
 
-- [по уплаченным налогам за 2017 год](/taxes/2017/data-20190426-structure-20180110/)
+- [по уплаченным налогам за 2017 год](/tutorial_analysis_people.ipynb)
+
+### Контакты
+
+Хотите обсудить с нами или присоединиться к проекту? Пишите на [email](mailto:info@taxadvisor.ru)
+
 
