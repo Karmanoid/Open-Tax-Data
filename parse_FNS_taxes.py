@@ -42,15 +42,15 @@ for file in files:
         taxes=docs[i].findall('СвУплСумНал')
         for tax in taxes:
             item[re.sub(' +', ' ',tax.get('НаимНалог'))]=float(tax.get('СумУплНал'))
-#            print (tax.get('НаимНалог'), tax.get('СумУплНал'))
-#        print (item)
         dataset.append (item)
-#print(dataset)    
 
 df=pd.DataFrame(dataset)
-##df=df.astype({"Cost":np.float16})
-##df=df.astype({"Revenue":np.float16})
-##df['Profit']=df['Revenue']-df['Cost']
+
+# добавляем сумму всех уплаченных налогов одной компанией
+
+total=df.sum(axis = 1, skipna = True) 
+df['Total']=total
+
 print ('saving dataset...')
 ##
 #сохраняем датасе в текущий каталог

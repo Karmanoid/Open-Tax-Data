@@ -42,6 +42,7 @@ for file in files:
         item=dict.fromkeys(['Company', 'INN', 'People'])
 df=pd.DataFrame(dataset)
 df['region']=df.INN.str[0:2] 
+
 print ('saving dataset...')
 
 #сохраняем датасе в текущий каталог
